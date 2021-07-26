@@ -31,6 +31,7 @@ st: $(OBJ)
 
 clean:
 	rm -f st $(OBJ) st-$(VERSION).tar.gz
+	cd ./scroll/ && make clean
 
 dist: clean
 	mkdir -p st-$(VERSION)
@@ -51,5 +52,6 @@ install: st
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st
+	cd ./scroll/ && sudo make clean uninstall
 
 .PHONY: all options clean dist install uninstall
