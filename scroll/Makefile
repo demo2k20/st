@@ -4,9 +4,6 @@ include config.mk
 
 all: scroll
 
-config.h:
-	cp config.def.h config.h
-
 scroll: scroll.c config.h
 
 install: scroll
