@@ -1,5 +1,5 @@
 /* appearance */
-static char *font = "DejaVu Sans Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Terminus:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
