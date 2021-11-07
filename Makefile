@@ -48,10 +48,13 @@ install: st
 	mkdir -p $(DESTDIR)$(MANPREFIX)/man1
 	tic -sx st.info
 	@echo Please see the README file regarding the terminfo entry of st.
+	mkdir -p $(DESTDIR)$(PREFIX)/share/applications
+	cp -f st.desktop $(DESTDIR)$(PREFIX)/share/applications
 	cd ./scroll/ && sudo make clean install
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st
+	rm -f $(DESTDIR)$(PREFIX)/share/applications/st.desktop
 	cd ./scroll/ && sudo make clean uninstall
 
 .PHONY: all options clean dist install uninstall
