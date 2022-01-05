@@ -9,7 +9,7 @@ static char *font = "DejaVu Sans Mono Nerd Font:pixelsize=14:antialias=true:auto
 /* Spare fonts */
 static char *font2[] = { "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
 
-static int borderpx = 2;
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
